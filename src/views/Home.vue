@@ -2,7 +2,7 @@
   <v-container fluid class="fill-height">
     <v-row>
       <v-col cols="12" xs="10" offset-xs="1">
-        <div class="text-h3 text-center">
+        <div class="text-h3 text-center page-title">
           WMMBA Trail Conditions
         </div>
       </v-col>
@@ -13,9 +13,13 @@
       <div class="text-h5 text-center">
         Main WMMBA Page
       </div>
-      <div class="text-h5 text-center">
-        Current Trail Conditions
-      </div>
+
+      <router-link :to="{ name: 'Trails'}">
+        <div class="text-h5 text-center">
+          Current Trail Conditions
+        </div>
+      </router-link>
+
     </v-col>
   </v-row>
   </v-container>
